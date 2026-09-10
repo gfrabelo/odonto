@@ -177,7 +177,7 @@ export function YohanaLanding({ clinic }: { clinic: ClinicConfig }) {
                 return (
                 <Reveal key={service.name}>
                   <article className="service-card group">
-                    <div className="service-media relative aspect-square overflow-hidden rounded-[26px]">
+                    <div className="service-media relative aspect-[4/5] overflow-hidden rounded-[26px]">
                       {isBotox ? (
                         <div className="absolute inset-0 grid grid-rows-2 gap-px bg-ivory">
                           <div className="relative overflow-hidden">

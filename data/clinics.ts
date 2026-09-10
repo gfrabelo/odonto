@@ -141,7 +141,7 @@ export const clinics: Record<string, ClinicConfig> = {
         name: "Preenchimento labial",
         description:
           "Contorno, hidratação e proporção com uma abordagem delicada, pensada para respeitar seus traços.",
-        image: "/yohana/image copy 3.png",
+        image: "/yohana/preenchimento-labial-hd.png",
       },
       {
         name: "Toxina botulínica",
