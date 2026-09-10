@@ -31,17 +31,14 @@
 .hero-title span + span { margin-top: .18em; margin-left: .13em; }
 .hero-title em { color: #9a6853; font-weight: 400; }
 .hero-portrait-frame { border-radius: 260px 260px 26px 26px; background: #dccabb; }
-.hero-photo-wash, .service-image-wash { position: absolute; inset: 0; background: linear-gradient(180deg, transparent 55%, rgba(43, 33, 29, .2)); pointer-events: none; }
+.hero-photo-wash { position: absolute; inset: 0; background: linear-gradient(180deg, transparent 55%, rgba(43, 33, 29, .2)); pointer-events: none; }
 .hero-seal { z-index: 5; display: grid; width: 132px; height: 132px; place-items: center; align-content: center; gap: 7px; border: 1px solid rgba(154, 104, 83, .35); border-radius: 50%; background: rgba(247, 230, 234, .9); color: #9a6853; text-align: center; font-family: var(--font-cormorant), serif; font-size: 14px; font-style: italic; line-height: 1.05; backdrop-filter: blur(8px); }
 .marquee-strip { border-block: 1px solid rgba(154, 104, 83, .13); background: #f2e1e4; color: rgba(43, 33, 29, .6); }
 .marquee-strip i { color: #b9826a; font-style: normal; }
-.service-card { height: 100%; overflow: hidden; border: 1px solid rgba(154, 104, 83, .13); border-radius: 120px 120px 20px 20px; background: #fffaf8; transition: transform 350ms ease, box-shadow 350ms ease, border-color 350ms ease; }
-.service-card:hover { transform: translateY(-7px); border-color: rgba(223, 175, 186, .65); box-shadow: 0 30px 80px -45px rgba(43, 33, 29, .35); }
-.service-media { background: #eadbd4; isolation: isolate; }
-.service-image-backdrop { z-index: 0; transform: scale(1.16); filter: blur(18px) saturate(.72); opacity: .42; }
-.service-image-main { z-index: 1; padding: 9px; filter: drop-shadow(0 9px 18px rgba(43, 33, 29, .12)); }
-.service-image-wash { z-index: 2; }
-.service-media > span { z-index: 3; }
+.service-card { height: 100%; transition: transform 350ms ease; }
+.service-card:hover { transform: translateY(-5px); }
+.service-media { background: #eadbd4; box-shadow: 0 24px 55px -38px rgba(43, 33, 29, .4); }
+.comparison-label { position: absolute; left: 12px; top: 12px; z-index: 2; border: 1px solid rgba(255,255,255,.65); border-radius: 999px; background: rgba(250,247,242,.88); padding: 5px 10px; color: #795848; font-size: 8px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; backdrop-filter: blur(8px); }
 .floating-contact { position: fixed; right: 20px; bottom: 20px; z-index: 40; display: grid; width: 56px; height: 56px; place-items: center; border-radius: 50%; background: #9a6853; color: white; box-shadow: 0 15px 35px -12px rgba(43, 33, 29, .45); transition: transform 220ms ease, background 220ms ease; }
 .floating-contact:hover { transform: translateY(-4px); background: #2b211d; }
 
@@ -52,6 +49,6 @@
   .hero-title { font-size: clamp(3.75rem, 18vw, 5.2rem); }
   .hero-title span + span { margin-left: 0; }
   .hero-seal { right: 0; width: 112px; height: 112px; font-size: 13px; }
-  .service-image-main { padding: 7px; }
   .about-signature { left: 8px; }
+  .yohana-page .floating-contact { display: none; }
 }

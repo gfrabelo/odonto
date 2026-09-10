@@ -171,17 +171,29 @@ export function YohanaLanding({ clinic }: { clinic: ClinicConfig }) {
               </div>
             </Reveal>
 
-            <div className="mt-14 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-              {clinic.services.map((service, index) => (
+            <div className="mt-14 grid gap-x-5 gap-y-12 md:grid-cols-2 lg:grid-cols-4">
+              {clinic.services.map((service) => {
+                const isBotox = service.name === "Toxina botulínica";
+                return (
                 <Reveal key={service.name}>
                   <article className="service-card group">
-                    <div className="service-media relative aspect-[4/4.6] overflow-hidden">
-                      <Image src={service.image} alt="" aria-hidden fill className="service-image-backdrop object-cover" sizes="(max-width: 768px) 100vw, 25vw" />
-                      <Image src={service.image} alt={service.name} fill className="service-image-main object-contain transition duration-700 group-hover:scale-[1.025]" sizes="(max-width: 768px) 100vw, 25vw" />
-                      <div className="service-image-wash" />
-                      <span className="absolute left-5 top-5 text-[10px] font-bold tracking-[0.18em] text-white/80">0{index + 1}</span>
+                    <div className="service-media relative aspect-square overflow-hidden rounded-[26px]">
+                      {isBotox ? (
+                        <div className="absolute inset-0 grid grid-rows-2 gap-px bg-ivory">
+                          <div className="relative overflow-hidden">
+                            <Image src={service.image} alt="Resultado antes da aplicação de toxina botulínica" fill className="object-cover object-top transition duration-700 group-hover:scale-[1.025]" sizes="(max-width: 768px) 100vw, 25vw" />
+                            <span className="comparison-label">Antes</span>
+                          </div>
+                          <div className="relative overflow-hidden">
+                            <Image src={service.image} alt="Resultado depois da aplicação de toxina botulínica" fill className="object-cover object-bottom transition duration-700 group-hover:scale-[1.025]" sizes="(max-width: 768px) 100vw, 25vw" />
+                            <span className="comparison-label">Depois</span>
+                          </div>
+                        </div>
+                      ) : (
+                        <Image src={service.image} alt={service.name} fill className="object-cover transition duration-700 group-hover:scale-[1.025]" sizes="(max-width: 768px) 100vw, 25vw" />
+                      )}
                     </div>
-                    <div className="p-6">
+                    <div className="px-1 pt-6">
                       <h3 className="font-serif text-[1.7rem] leading-none text-espresso">{service.name}</h3>
                       <p className="mt-4 text-sm leading-6 text-espresso/60">{service.description}</p>
                       <a href={contactUrl} target="_blank" rel="noreferrer" className="mt-6 inline-flex items-center gap-2 text-xs font-extrabold uppercase tracking-[0.12em] text-copper">
@@ -190,7 +202,8 @@ export function YohanaLanding({ clinic }: { clinic: ClinicConfig }) {
                     </div>
                   </article>
                 </Reveal>
-              ))}
+                );
+              })}
             </div>
             <p className="mt-7 text-center text-xs leading-5 text-espresso/45">A indicação de qualquer procedimento depende de avaliação clínica individual.</p>
           </div>
