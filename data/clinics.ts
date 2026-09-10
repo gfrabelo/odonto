@@ -105,6 +105,71 @@ const baseServices: Service[] = [
 ];
 
 export const clinics: Record<string, ClinicConfig> = {
+  "dra-yohana-vitoria": {
+    slug: "dra-yohana-vitoria",
+    clinicName: "Dra. Yohana Vitoria",
+    shortName: "Yohana Vitoria",
+    city: "Peruíbe",
+    state: "SP",
+    address: "Peruíbe — SP",
+    whatsapp: "",
+    whatsappDisplay: "",
+    instagram: "@drayohanavitoria",
+    hero: {
+      eyebrow: "Odontologia estética & harmonização facial",
+      title: "Realce o que",
+      highlight: "já é seu.",
+      description:
+        "Um olhar integrado para sorriso e face, com técnica, delicadeza e respeito à sua identidade.",
+    },
+    about: {
+      eyebrow: "Sobre a Dra. Yohana",
+      title: "Técnica para transformar. Sensibilidade para preservar.",
+      description:
+        "Cirurgiã-dentista com atuação em odontologia e harmonização facial, a Dra. Yohana une conhecimento técnico a um olhar cuidadoso para cada detalhe.",
+      secondaryText:
+        "Seu trabalho parte de uma premissa simples: valorizar o que já existe, respeitando proporções, características e a identidade de cada paciente.",
+    },
+    services: [
+      {
+        name: "Estética do sorriso",
+        description:
+          "Planejamento individual para valorizar forma, cor e harmonia, preservando a naturalidade do sorriso.",
+        image: "/yohana/image copy 2.png",
+      },
+      {
+        name: "Preenchimento labial",
+        description:
+          "Contorno, hidratação e proporção com uma abordagem delicada, pensada para respeitar seus traços.",
+        image: "/yohana/image copy 3.png",
+      },
+      {
+        name: "Toxina botulínica",
+        description:
+          "Suavização de linhas de expressão com planejamento preciso e preservação da expressividade.",
+        image: "/yohana/image copy 7.png",
+      },
+      {
+        name: "Harmonização facial",
+        description:
+          "Procedimentos combinados para equilibrar proporções e realçar a beleza de forma leve e individual.",
+        image: "/yohana/image copy 4.png",
+      },
+    ],
+    doctors: [
+      {
+        name: "Dra. Yohana Vitoria",
+        specialty: "Odontologia & Harmonização Facial",
+        cro: "CRO/SP 169824",
+        image: "/yohana/yohana-hero-hd.png",
+      },
+    ],
+    clinicImages: [
+      "/yohana/yohana-v2.png",
+      "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1000&q=85",
+      "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=1000&q=85",
+    ],
+  },
   "lumina-odontologia": {
     slug: "lumina-odontologia",
     clinicName: "Lumina Odontologia",
@@ -240,4 +305,4 @@ export const clinics: Record<string, ClinicConfig> = {
   },
 };
 
-export const defaultClinicSlug = "lumina-odontologia";
+export const defaultClinicSlug = "dra-yohana-vitoria";
