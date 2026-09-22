@@ -1,0 +1,128 @@
+/* Stylesheet exclusivo para Dr. Gilvan Salvadori Ferro - Landing Page de Alto Padrão */
+
+.gilvan-theme {
+  --g-navy-950: #050d1a;
+  --g-navy-900: #09172e;
+  --g-navy-800: #0f274d;
+  --g-navy-700: #173b75;
+  --g-blue-600: #0284c7;
+  --g-blue-500: #0ea5e9;
+  --g-blue-100: #e0f2fe;
+  --g-blue-50: #f0f9ff;
+  --g-accent: #0284c7;
+  --g-gold: #c69234;
+  --g-surface: #ffffff;
+  --g-surface-subtle: #f8fafc;
+  --g-border: #e2e8f0;
+  --g-text-dark: #0f172a;
+  --g-text-muted: #475569;
+  
+  font-family: var(--font-manrope), system-ui, -apple-system, sans-serif;
+  color: var(--g-text-dark);
+  background-color: #fbfcfe;
+}
+
+/* Efeito de iluminação sutil no fundo */
+.gilvan-hero-bg {
+  background: radial-gradient(120% 90% at 75% 10%, #e0f2fe 0%, #f0f9ff 35%, #ffffff 75%);
+}
+
+@media (min-width: 1024px) {
+  .gilvan-hero-bg {
+    background: radial-gradient(85% 85% at 70% 30%, #dbeafe 0%, #f0f9ff 45%, #ffffff 80%);
+  }
+}
+
+/* Glassmorphism cards */
+.gilvan-glass {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(226, 232, 240, 0.85);
+  box-shadow: 0 16px 36px -12px rgba(9, 23, 46, 0.08);
+}
+
+.gilvan-glass-dark {
+  background: rgba(9, 23, 46, 0.82);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 24px 48px -12px rgba(5, 13, 26, 0.35);
+}
+
+/* Floating animation */
+@keyframes gilvan-float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-gilvan-float {
+  animation: gilvan-float 5s ease-in-out infinite;
+}
+
+.animate-gilvan-float-delayed {
+  animation: gilvan-float 6s ease-in-out infinite;
+  animation-delay: 2.5s;
+}
+
+/* Pulso verde de status online */
+@keyframes online-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.6);
+  }
+  70% {
+    box-shadow: 0 0 0 8px rgba(34, 197, 94, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(34, 197, 94, 0);
+  }
+}
+
+.online-dot {
+  position: relative;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #22c55e;
+  animation: online-pulse 2s infinite;
+}
+
+/* Card hover glow */
+.service-card-hover {
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.service-card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 22px 42px -10px rgba(15, 39, 77, 0.12);
+  border-color: #bae6fd;
+}
+
+/* Scrollbar sutil para carrossel de depoimentos */
+.reviews-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e1 transparent;
+}
+
+.reviews-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+
+.reviews-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.reviews-scroll::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+
+/* Barra de agendamento fixa mobile */
+.mobile-sticky-bar {
+  box-shadow: 0 -8px 24px -4px rgba(9, 23, 46, 0.12);
+}

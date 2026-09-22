@@ -44,6 +44,7 @@ export function ServicesAccordion({
                       src={service.image}
                       alt={`Tratamento de ${service.name}`}
                       fill
+                      unoptimized
                       className="object-cover"
                       sizes="(max-width: 768px) 100vw, 210px"
                     />
