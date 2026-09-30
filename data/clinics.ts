@@ -112,6 +112,114 @@ const baseServices: Service[] = [
 ];
 
 export const clinics: Record<string, ClinicConfig> = {
+  "care-way-odontologia": {
+    slug: "care-way-odontologia",
+    clinicName: "Care Way Odontologia",
+    shortName: "Care Way",
+    city: "Santos",
+    state: "SP",
+    address: "Santos — SP",
+    whatsapp: "",
+    whatsappDisplay: "",
+    instagram: "@care.way",
+    hero: {
+      eyebrow: "Odontologia humanizada em Santos",
+      title: "Um jeito mais leve de",
+      highlight: "cuidar do seu sorriso.",
+      description:
+        "Escuta, acolhimento e cuidado individual para transformar a ida ao dentista em uma experiência tranquila — no seu tempo e com respeito à sua história.",
+      socialProof: "Mais de 10 anos de experiência clínica",
+    },
+    about: {
+      eyebrow: "Nossa forma de cuidar",
+      title: "Antes do tratamento, existe uma pessoa.",
+      description:
+        "Na Care Way, cada atendimento começa pela escuta. Entendemos suas necessidades, seus receios e sua rotina para construir um cuidado possível, claro e verdadeiramente individual.",
+      secondaryText:
+        "Prevenção, reabilitação e estética integrativa se encontram em um espaço pensado para que você se sinta seguro desde o primeiro contato.",
+    },
+    services: [
+      {
+        name: "Prevenção e cuidado contínuo",
+        description: "Acompanhamento próximo, diagnóstico e orientações para preservar a saúde oral em todas as fases da vida.",
+        image: "/careway/image copy 7.png",
+      },
+      {
+        name: "Reabilitação oral",
+        description: "Planejamento individual para recuperar conforto, função mastigatória e confiança ao sorrir.",
+        image: "/careway/image copy 8.png",
+      },
+      {
+        name: "DTM e dor orofacial",
+        description: "Avaliação cuidadosa das disfunções temporomandibulares e das dores que afetam face e qualidade de vida.",
+        image: "/careway/image copy 3.png",
+      },
+      {
+        name: "Implantes e próteses",
+        description: "Experiência clínica e laboratorial integradas para devolver estabilidade, naturalidade e segurança.",
+        image: "/careway/image copy 4.png",
+      },
+      {
+        name: "Atendimento domiciliar",
+        description: "Cuidado odontológico que considera mobilidade, contexto familiar e as necessidades de cada paciente.",
+        image: "/careway/image copy 9.png",
+      },
+      {
+        name: "Estética integrativa",
+        description: "Terapias faciais e corporais com uma visão naturalista, voltada ao equilíbrio, bem-estar e saúde.",
+        image: "/careway/silmara.jpg",
+      },
+    ],
+    doctors: [
+      {
+        name: "Dra. Nadyne Bittencourt",
+        specialty: "Cirurgiã-dentista • Idealizadora da Care Way",
+        image: "/careway/dra-nadyne.jpg",
+      },
+      {
+        name: "Vladimir",
+        specialty: "Cirurgião-dentista • Prótese, cirurgia oral e implantodontia",
+        image: "/careway/vladimir.jpg",
+      },
+      {
+        name: "Silmara",
+        specialty: "Esteticista • Terapias integrativas faciais e corporais",
+        image: "/careway/silmara.jpg",
+      },
+    ],
+    stats: [
+      { value: "+10", label: "anos de experiência clínica" },
+      { value: "5,0", label: "avaliação de pacientes" },
+      { value: "3", label: "olhares integrados para o cuidado" },
+    ],
+    testimonials: [
+      {
+        name: "Charlene Gonçalves",
+        detail: "Avaliação de paciente",
+        rating: 5,
+        text: "A Dra. Nadyne é muito atenciosa. Respeitou o tempo da minha filha, conquistou sua confiança e o tratamento deu muito certo.",
+      },
+      {
+        name: "B. Camacho",
+        detail: "Avaliação de paciente",
+        rating: 5,
+        text: "Profissional atenciosa, cuidadosa e ética, comprometida com o bem-estar do paciente e sempre presente no acompanhamento.",
+      },
+      {
+        name: "Mafalda Alamino",
+        detail: "Avaliação de paciente",
+        rating: 5,
+        text: "Um lugar acolhedor. Nadyne trata cada pessoa como única, com mãos leves, cuidado e muita tranquilidade.",
+      },
+    ],
+    clinicImages: [
+      "/careway/image.png",
+      "/careway/image copy.png",
+      "/careway/image copy 2.png",
+      "/careway/image copy 3.png",
+      "/careway/image copy 4.png",
+    ],
+  },
   "dra-yohana-vitoria": {
     slug: "dra-yohana-vitoria",
     clinicName: "Dra. Yohana Vitoria",

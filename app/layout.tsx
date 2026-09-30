@@ -3,6 +3,7 @@ import { Cormorant_Garamond, Manrope } from "next/font/google";
 import "./globals.css";
 import "./yohana.css";
 import "./gilvan.css";
+import "./careway.css";
 
 const manrope = Manrope({
   subsets: ["latin"],
