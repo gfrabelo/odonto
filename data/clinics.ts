@@ -119,9 +119,13 @@ export const clinics: Record<string, ClinicConfig> = {
     city: "Santos",
     state: "SP",
     address: "Santos — SP",
-    whatsapp: "",
-    whatsappDisplay: "",
+    phone: "13981178037",
+    phoneDisplay: "(13) 9 8117-8037",
+    whatsapp: "5513981178037",
+    whatsappDisplay: "(13) 9 8117-8037",
     instagram: "@care.way",
+    cro: "CRO/SP 110120",
+    hours: ["Atendimentos com horários reservados especialmente para você"],
     hero: {
       eyebrow: "Odontologia humanizada em Santos",
       title: "Um jeito mais leve de",
@@ -169,11 +173,22 @@ export const clinics: Record<string, ClinicConfig> = {
         description: "Terapias faciais e corporais com uma visão naturalista, voltada ao equilíbrio, bem-estar e saúde.",
         image: "/careway/silmara.jpg",
       },
+      {
+        name: "Clareamento dental",
+        description: "Avaliação profissional para escolher a técnica mais segura, eficaz e adequada para iluminar o sorriso.",
+        image: "/careway/image copy 4.png",
+      },
+      {
+        name: "Bruxismo",
+        description: "Avaliação dos sinais de apertamento e ranger dos dentes, com orientação individual para proteger sua saúde oral.",
+        image: "/careway/image copy 3.png",
+      },
     ],
     doctors: [
       {
         name: "Dra. Nadyne Bittencourt",
         specialty: "Cirurgiã-dentista • Idealizadora da Care Way",
+        cro: "CRO/SP 110120",
         image: "/careway/dra-nadyne.jpg",
       },
       {
