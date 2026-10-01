@@ -30,6 +30,7 @@ export type ClinicConfig = {
   slug: string;
   clinicName: string;
   shortName?: string;
+  logo?: string;
   city: string;
   state: string;
   address: string;
@@ -299,6 +300,79 @@ export const clinics: Record<string, ClinicConfig> = {
       "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1000&q=85",
       "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=1000&q=85",
     ],
+  },
+  "dents-premium": {
+    slug: "dents-premium",
+    clinicName: "Dents Premium Implantes",
+    shortName: "Dents Premium",
+    logo: "/dents-premium/logo.png",
+    city: "Praia Grande",
+    state: "SP",
+    address: "Av. Brasil, 237 — Boqueirão, Praia Grande — SP",
+    whatsapp: "5513991272124",
+    whatsappDisplay: "(13) 99127-2124",
+    cro: "RT: Danilo S. Souza — CRO/SP 129044",
+    hours: ["Segunda a sexta, das 9h às 19h", "Sábado, das 9h às 16h"],
+    hero: {
+      eyebrow: "Estética e Reabilitação Oral em Praia Grande",
+      title: "Reconquiste a segurança de",
+      highlight: "sorrir com confiança.",
+      description:
+        "Implantes dentários, próteses e harmonização facial com planejamento individualizado para devolver função, estética e qualidade de vida.",
+      socialProof: "Nota 4,8 no Google • 229 avaliações",
+    },
+    about: {
+      eyebrow: "Dents Premium Implantes",
+      title: "Cuidado completo para transformar seu sorriso.",
+      description:
+        "Na Dents Premium, cada tratamento começa com uma avaliação cuidadosa e um plano pensado para as necessidades de cada paciente.",
+      secondaryText:
+        "Estética e reabilitação oral reunidas em um só lugar, no coração do Boqueirão, com atendimento de segunda a sábado.",
+    },
+    services: [
+      {
+        name: "Implantes dentários",
+        description:
+          "Soluções planejadas para repor dentes perdidos e recuperar segurança, estabilidade e conforto ao mastigar.",
+        image: images.services[1],
+      },
+      {
+        name: "Próteses dentárias",
+        description:
+          "Próteses personalizadas para devolver função, estética e naturalidade ao sorriso.",
+        image: images.services[2],
+      },
+      {
+        name: "Reabilitação oral",
+        description:
+          "Planejamento integrado para recuperar saúde, equilíbrio da mordida e qualidade de vida.",
+        image: images.services[0],
+      },
+      {
+        name: "Harmonização facial",
+        description:
+          "Procedimentos personalizados para valorizar os traços e promover resultados equilibrados e naturais.",
+        image: images.services[2],
+      },
+      {
+        name: "Estética do sorriso",
+        description:
+          "Tratamentos que cuidam da forma, cor e harmonia do sorriso com atenção a cada detalhe.",
+        image: images.services[0],
+      },
+      {
+        name: "Avaliação odontológica",
+        description:
+          "Uma conversa cuidadosa e um diagnóstico completo para definir o melhor caminho para o seu sorriso.",
+        image: images.services[1],
+      },
+    ],
+    stats: [
+      { value: "4,8 ★", label: "nota no Google" },
+      { value: "229", label: "avaliações de pacientes" },
+      { value: "Seg–Sáb", label: "atendimento durante a semana e aos sábados" },
+    ],
+    clinicImages: images.clinic,
   },
   "lumina-odontologia": {
     slug: "lumina-odontologia",
@@ -678,4 +752,4 @@ export const clinics: Record<string, ClinicConfig> = {
   },
 };
 
-export const defaultClinicSlug = "dr-gilvan-salvadori";
+export const defaultClinicSlug = "dents-premium";

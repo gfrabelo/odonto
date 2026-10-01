@@ -20,8 +20,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const isGilvan = clinic.slug === "dr-gilvan-salvadori";
   const isYohana = clinic.slug === "dra-yohana-vitoria";
   const isCareWay = clinic.slug === "care-way-odontologia";
+  const isDentsPremium = clinic.slug === "dents-premium";
   
-  const title = isGilvan
+  const title = isDentsPremium
+    ? "Dents Premium Implantes | Dentista em Praia Grande"
+    : isGilvan
     ? `${clinic.clinicName} | Implantes, Biomimética & Odontologia Digital em Santos`
     : isYohana
     ? `${clinic.clinicName} | Odontologia & Harmonização Facial em ${clinic.city}`
@@ -29,7 +32,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     ? `${clinic.clinicName} | Odontologia Humanizada em Santos`
     : `Dentista em ${clinic.city} | ${clinic.clinicName}`;
 
-  const description = isGilvan
+  const description = isDentsPremium
+    ? "Implantes dentários, próteses dentárias, estética e harmonização facial no Boqueirão, Praia Grande. Dents Premium: nota 4,8 em 229 avaliações."
+    : isGilvan
     ? `${clinic.clinicName} (CRO/SP 81.026): Implantes dentários, escaneamento digital 3D sem moldagens, biomimética e facetas no Boqueirão, Santos. Avaliação 5.0 no Google.`
     : isYohana
     ? `${clinic.clinicName}: odontologia estética e harmonização facial com naturalidade em ${clinic.city}, ${clinic.state}.`

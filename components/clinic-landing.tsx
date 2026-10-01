@@ -69,7 +69,7 @@ export function ClinicLanding({ clinic }: { clinic: ClinicConfig }) {
       />
       <header className="fixed inset-x-0 top-0 z-50 border-b border-white/60 bg-white/85 backdrop-blur-xl">
         <div className="container-site flex h-[76px] items-center justify-between">
-          <Brand name={clinic.clinicName} shortName={clinic.shortName} />
+          <Brand name={clinic.clinicName} shortName={clinic.shortName} logo={clinic.logo} />
           <nav className="hidden items-center gap-7 lg:flex" aria-label="Navegação principal">
             {navLinks.map(([label, href]) => (
               <a key={href} href={href} className="text-[13px] font-bold text-ink/75 transition-colors hover:text-primary">
@@ -288,6 +288,7 @@ export function ClinicLanding({ clinic }: { clinic: ClinicConfig }) {
                 <ContactRow icon={MapPin} title="Endereço" lines={[clinic.address]} />
                 <ContactRow icon={Phone} title="WhatsApp" lines={[clinic.whatsappDisplay]} />
                 {clinic.hours && <ContactRow icon={Clock3} title="Horários" lines={clinic.hours} />}
+                {clinic.cro && <ContactRow icon={BadgeCheck} title="Responsável técnico" lines={[clinic.cro]} />}
                 {clinic.instagram && <ContactRow icon={Instagram} title="Instagram" lines={[clinic.instagram]} />}
               </div>
             </Reveal>
@@ -302,7 +303,7 @@ export function ClinicLanding({ clinic }: { clinic: ClinicConfig }) {
 
       <footer className="bg-navy py-10 text-white">
         <div className="container-site flex flex-col gap-8 sm:flex-row sm:items-end sm:justify-between">
-          <div><p className="text-xl font-extrabold tracking-[-0.03em]">{clinic.clinicName}</p><p className="mt-2 text-xs text-white/50">Odontologia moderna e humanizada em {clinic.city}.</p></div>
+          <div><p className="text-xl font-extrabold tracking-[-0.03em]">{clinic.clinicName}</p><p className="mt-2 text-xs text-white/50">Odontologia moderna e humanizada em {clinic.city}.</p>{clinic.cro && <p className="mt-2 text-[11px] text-white/40">{clinic.cro}</p>}</div>
           <div className="text-xs text-white/45"><p>© {new Date().getFullYear()} {clinic.clinicName}</p><p className="mt-1">As informações deste site têm caráter institucional.</p></div>
         </div>
       </footer>
