@@ -1,0 +1,112 @@
+[
+  {
+    "tratamento": "Avaliação odontológica",
+    "categoria": "avaliacao",
+    "termos": "avaliacao consulta consultar checkup check-up orcamento primeira vez exame revisao",
+    "descricao": "Consulta inicial em que o dentista examina a boca, tira as dúvidas e monta o plano de tratamento com os valores.",
+    "especialista": "toda a equipe",
+    "duracaoMin": 40,
+    "preco": 0,
+    "disponivel": true,
+    "destaque": true
+  },
+  {
+    "tratamento": "Implante dentário",
+    "categoria": "reabilitacao",
+    "termos": "implante implantes pino parafuso titanio falta faltando perdi perdeu banguela",
+    "descricao": "Repõe o dente que falta com um pino fixo no osso e uma coroa por cima, que fica firme como um dente natural.",
+    "especialista": "Dr. Rafael Martins",
+    "disponivel": true,
+    "destaque": true
+  },
+  {
+    "tratamento": "Prótese e dentadura",
+    "categoria": "reabilitacao",
+    "termos": "protese proteses dentadura dentaduras ponte chapa roach coroa coroas protocolo removivel solta frouxa",
+    "descricao": "Coroas, pontes, dentaduras e protocolo para devolver a mastigação e o sorriso, fixos ou removíveis.",
+    "especialista": "Dr. Rafael Martins",
+    "disponivel": true,
+    "destaque": false
+  },
+  {
+    "tratamento": "Ortodontia (aparelho e alinhadores)",
+    "categoria": "ortodontia",
+    "termos": "aparelho aparelhos alinhador alinhadores invisalign invisivel transparente torto tortos encavalado mordida separado espaco",
+    "descricao": "Alinha os dentes e a mordida com aparelho fixo ou alinhadores transparentes, que quase não aparecem.",
+    "especialista": "Dra. Beatriz Nogueira",
+    "disponivel": true,
+    "destaque": true
+  },
+  {
+    "tratamento": "Clareamento dental",
+    "categoria": "estetica",
+    "termos": "clarear clareamento branco branquinho branquear amarelo amarelado amarelados manchado manchas escuro",
+    "descricao": "Deixa os dentes mais brancos com protocolo feito no consultório, em casa com moldeira, ou os dois combinados.",
+    "especialista": "Dra. Marina Azevedo",
+    "disponivel": true,
+    "destaque": true
+  },
+  {
+    "tratamento": "Lentes de contato dental",
+    "categoria": "estetica",
+    "termos": "lente lentes faceta facetas laminado laminados porcelana sorriso perfeito harmonizar formato",
+    "descricao": "Lâminas finas coladas na frente dos dentes que corrigem cor, formato e pequenos espaços.",
+    "especialista": "Dra. Marina Azevedo",
+    "disponivel": true,
+    "destaque": true
+  },
+  {
+    "tratamento": "Limpeza e prevenção",
+    "categoria": "prevencao",
+    "termos": "limpeza profilaxia tartaro placa manutencao preventivo flúor fluor rotina",
+    "descricao": "Remove tártaro e placa e confere se está tudo em ordem, o ideal é fazer a cada seis meses.",
+    "especialista": "Dra. Marina Azevedo",
+    "disponivel": true,
+    "destaque": false
+  },
+  {
+    "tratamento": "Tratamento de gengiva",
+    "categoria": "prevencao",
+    "termos": "gengiva gengivas gengivite periodontia periodontite sangra sangrando sangramento retracao mau halito halito",
+    "descricao": "Cuida de gengiva que sangra, inflama ou está retraída, e de mau hálito ligado a isso.",
+    "especialista": "Dra. Marina Azevedo",
+    "disponivel": true,
+    "destaque": false
+  },
+  {
+    "tratamento": "Restauração",
+    "categoria": "tratamento",
+    "termos": "restauracao restaurar obturacao obturar carie caries buraco furo massinha resina lascado",
+    "descricao": "Trata a cárie e reconstrói o dente com resina da cor do dente.",
+    "especialista": "Dra. Marina Azevedo",
+    "disponivel": true,
+    "destaque": false
+  },
+  {
+    "tratamento": "Tratamento de canal",
+    "categoria": "tratamento",
+    "termos": "canal endodontia nervo polpa",
+    "descricao": "Trata o nervo do dente quando a cárie ou uma pancada chegou lá dentro, para salvar o dente.",
+    "especialista": "Dr. Rafael Martins",
+    "disponivel": true,
+    "destaque": false
+  },
+  {
+    "tratamento": "Extração e siso",
+    "categoria": "tratamento",
+    "termos": "extracao extrair arrancar tirar siso sisos cirurgia juizo",
+    "descricao": "Remoção de dente, incluindo o siso, com planejamento e anestesia local.",
+    "especialista": "Dr. Rafael Martins",
+    "disponivel": true,
+    "destaque": false
+  },
+  {
+    "tratamento": "Atendimento de urgência",
+    "categoria": "urgencia",
+    "termos": "urgencia urgente emergencia dor doendo doi doer latejando inchaco inchado inchou quebrou quebrei quebrado trincou sangrando caiu",
+    "descricao": "Atendimento prioritário para dor, dente quebrado ou inchaço, encaixado o quanto antes na agenda.",
+    "especialista": "Dr. Rafael Martins",
+    "disponivel": true,
+    "destaque": false
+  }
+]
