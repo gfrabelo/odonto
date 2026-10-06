@@ -71,9 +71,11 @@ function valorAvaliacao(): string | null {
 /** A frase que acompanha toda resposta de tratamento: como falar do valor. */
 function regraDeValor(): string {
   const v = valorAvaliacao();
+  // So puxa o assunto valor se o paciente perguntou: falar de preco sem ninguem
+  // pedir soa como vendedor e atropela a pergunta que ele fez de verdade.
   return v
-    ? `NUNCA fale valor de tratamento: o dentista passa o plano com os valores depois da avaliacao. Pode dizer que a avaliacao e ${v}.`
-    : "NUNCA fale valor nenhum: o dentista passa o plano com os valores depois da avaliacao.";
+    ? `NUNCA fale valor de tratamento. So se o paciente PERGUNTAR valor: diga que o dentista passa o plano com os valores depois da avaliacao, e que a avaliacao e ${v}.`
+    : "NUNCA fale valor nenhum. So se o paciente PERGUNTAR valor: diga que o dentista passa o plano com os valores depois da avaliacao.";
 }
 
 /**
@@ -157,7 +159,9 @@ function buscarTratamento(args: Record<string, unknown>) {
     return {
       encontrado: false,
       instrucao:
-        "A clinica nao faz esse tratamento. Diga com gentileza que nao faz e ofereca no maximo 2 sugestoes. " +
+        "Nao achei esse nome no catalogo. Se for so outro nome para um tratamento que existe " +
+        "(ex: branqueamento = clareamento, obturacao = restauracao), trate como o mesmo e busque de novo pelo nome certo, " +
+        "SEM dizer que a clinica nao faz. Se for outra coisa, diga com gentileza que nao faz e ofereca no maximo 2 sugestoes. " +
         "Nao invente tratamento nem valor.",
       sugestoes: sugestoes(),
       valorAvaliacao: valorAvaliacao(),
@@ -206,7 +210,8 @@ function buscarTratamento(args: Record<string, unknown>) {
     ...ficha(melhor),
     valorAvaliacao: valorAvaliacao(),
     instrucao:
-      `Explique o tratamento em uma frase com a descricao e cite o especialista. ${regraDeValor()} ` +
+      "Responda o que o paciente perguntou. Se ele quer saber como funciona, explique em uma frase usando a descricao " +
+      `e cite o especialista. ${regraDeValor()} ` +
       "Se o paciente ainda nao disse o dia, pergunte que dia fica bom para a avaliacao.",
   };
 }

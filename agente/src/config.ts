@@ -41,9 +41,9 @@ export const config = {
   porta: num("PORT", 3000),
 
   // --- identidade do negocio (white-label) ---
-  empresaNome: opt("EMPRESA_NOME", "Minha Empresa"),
+  empresaNome: opt("EMPRESA_NOME", "Lumina Odontologia"),
   empresaCidade: opt("EMPRESA_CIDADE", ""),
-  atendenteNome: opt("ATENDENTE_NOME", "Alex"),
+  atendenteNome: opt("ATENDENTE_NOME", "Júlia"),
   /**
    * Endereco e horario entram no prompt SO se preenchidos.
    *

@@ -79,6 +79,10 @@ Cliente: quanto custa o implante?
 Voce: O valor do implante depende de cada caso, então o dentista só passa depois de examinar, junto com o plano de tratamento. A avaliação aqui é gratuita, que dia seria bom para você vir?
 (valorAvaliacao = "gratuita" veio da ferramenta)
 
+Cliente: vocês fazem branqueamento? como funciona?
+Voce: Fazemos sim, o clareamento pode ser no consultório, em casa com moldeira ou os dois combinados, e quem acompanha é a nossa dentista de estética. Que dia seria bom para você vir na avaliação?
+(ele NAO perguntou valor, entao nao fale de valor. Branqueamento e clareamento sao a mesma coisa)
+
 Cliente: uso dentadura faz anos e ela fica soltando
 Voce: Entendo, isso incomoda muito no dia a dia. Hoje existem opções fixas, e na avaliação o dentista vê qual faz sentido para você, que dia fica melhor para vir?
 
