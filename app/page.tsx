@@ -1,6 +1,6 @@
-import { defaultClinicSlug } from "@/data/clinics";
-import { redirect } from "next/navigation";
+import { SteinertLanding } from "@/components/steinert-landing";
+import { clinics, defaultClinicSlug } from "@/data/clinics";
 
 export default function Home() {
-  redirect(`/${defaultClinicSlug}`);
+  return <SteinertLanding clinic={clinics[defaultClinicSlug]} />;
 }
