@@ -113,6 +113,54 @@ const baseServices: Service[] = [
 ];
 
 export const clinics: Record<string, ClinicConfig> = {
+  "clinica-steinert": {
+    slug: "clinica-steinert",
+    clinicName: "Clínica Steinert",
+    shortName: "Steinert",
+    logo: "/steinert/logo.png",
+    city: "Praia Grande",
+    state: "SP",
+    address: "Praça Dr. Roberto Andraus, 11 — Cidade Ocian, Praia Grande — SP",
+    phone: "13997422265",
+    phoneDisplay: "(13) 99742-2265",
+    whatsapp: "5513997422265",
+    whatsappDisplay: "(13) 99742-2265",
+    instagram: "@clinicasteinert",
+    cro: "Dra. Nathalia Steinert — CRO/SP 120.954",
+    hero: {
+      eyebrow: "Implantes e estética em Praia Grande",
+      title: "Seu sorriso de volta.",
+      highlight: "Sua confiança também.",
+      description: "Odontologia de excelência com escuta, planejamento e um cuidado que acolhe você em cada etapa.",
+      socialProof: "Mais de 2.000 sorrisos transformados",
+    },
+    about: {
+      eyebrow: "À frente da Clínica Steinert",
+      title: "Conhecimento técnico com um cuidado genuinamente humano.",
+      description: "A Dra. Nathalia Steinert conduz cada tratamento com atenção individual, explicações claras e um planejamento construído para cada paciente.",
+      secondaryText: "Formada pela Universidade Santa Cecília, possui residência em Saúde da Família e formação continuada em Implantodontia e Laminados Cerâmicos.",
+    },
+    services: [
+      { name: "Implantes dentários", description: "Planejamento preciso para recuperar segurança, função mastigatória e naturalidade.", image: "/steinert/clinic-1.jpg" },
+      { name: "Facetas e laminados", description: "Estética personalizada para transformar o sorriso preservando harmonia e identidade.", image: "/steinert/clinic-2.jpg" },
+      { name: "Alinhadores invisíveis", description: "Correção do alinhamento com discrição, conforto e acompanhamento profissional.", image: "/steinert/clinic-3.jpg" },
+      { name: "Prótese dentária", description: "Soluções individualizadas para devolver conforto, aparência e qualidade de vida.", image: "/steinert/gallery-1.jpg" },
+      { name: "Clínica geral", description: "Prevenção, diagnóstico e cuidado contínuo para preservar a saúde do seu sorriso.", image: "/steinert/gallery-2.jpg" },
+      { name: "Ortodontia", description: "Tratamentos para melhorar posição, função e equilíbrio do sorriso em todas as idades.", image: "/steinert/gallery-3.jpg" },
+    ],
+    doctors: [{ name: "Dra. Nathalia Steinert", specialty: "Implantodontia e Odontologia Estética", cro: "CRO/SP 120.954", image: "/steinert/nathalia.jpg" }],
+    stats: [
+      { value: "+2 mil", label: "sorrisos transformados" },
+      { value: "60+", label: "avaliações no Google" },
+      { value: "2016", label: "ano de formação" },
+    ],
+    testimonials: [
+      { name: "Jonathan Carvalheiro Bernardes", text: "Superou as minhas expectativas. Meu caso era complexo, a equipe discutiu o procedimento com muito cuidado e o resultado foi excelente.", rating: 5, detail: "Avaliação no Google" },
+      { name: "Marla Silva", text: "Lugar agradável, bonito e aconchegante, com excelentes profissionais. A Dra. Nathalia é calma e tem paciência com quem tem trauma de dentista.", rating: 5, detail: "Avaliação no Google" },
+      { name: "Neide Braga", text: "Estou muito feliz com o resultado. O cuidado e o carinho de todos me ajudaram a superar o medo de dentista.", rating: 5, detail: "Avaliação no Google" },
+    ],
+    clinicImages: ["/steinert/clinic-1.jpg", "/steinert/clinic-2.jpg", "/steinert/clinic-3.jpg", "/steinert/gallery-1.jpg", "/steinert/gallery-2.jpg", "/steinert/gallery-3.jpg"],
+  },
   "care-way-odontologia": {
     slug: "care-way-odontologia",
     clinicName: "Care Way Odontologia",
@@ -752,4 +800,4 @@ export const clinics: Record<string, ClinicConfig> = {
   },
 };
 
-export const defaultClinicSlug = "dents-premium";
+export const defaultClinicSlug = "clinica-steinert";

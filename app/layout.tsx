@@ -4,6 +4,7 @@ import "./globals.css";
 import "./yohana.css";
 import "./gilvan.css";
 import "./careway.css";
+import "./steinert.css";
 
 const manrope = Manrope({
   subsets: ["latin"],
