@@ -78,7 +78,7 @@ export function SteinertLanding({ clinic }: { clinic: ClinicConfig }) {
             <div className="relative z-10 max-w-[660px]">
               <p className="st-eyebrow"><span /> {clinic.hero.eyebrow}</p>
               <h1 className="st-hero-title mt-7">Seu sorriso<br />de volta. <em>Sua<br />confiança também.</em></h1>
-              <p className="mt-7 max-w-[570px] text-base leading-7 text-[#44605c] sm:text-lg sm:leading-8">{clinic.hero.description}</p>
+              <p className="mt-7 max-w-[570px] text-base leading-7 text-[#4d5f80] sm:text-lg sm:leading-8">{clinic.hero.description}</p>
               <div className="mt-9 flex flex-col gap-3 sm:flex-row">
                 <a href={whatsappUrl} target="_blank" rel="noreferrer" className="st-button st-button-gold min-h-14 px-6">
                   <MessageCircle className="size-5" /> Agendar minha avaliação
@@ -87,7 +87,7 @@ export function SteinertLanding({ clinic }: { clinic: ClinicConfig }) {
                   Conhecer tratamentos <ArrowDownRight className="size-4" />
                 </a>
               </div>
-              <div className="mt-10 flex flex-wrap gap-x-7 gap-y-3 border-t border-[#183f3b]/10 pt-6 text-[11px] font-extrabold uppercase tracking-[.13em] text-[#183f3b]/55">
+              <div className="mt-10 flex flex-wrap gap-x-7 gap-y-3 border-t border-[#0b1938]/10 pt-6 text-[11px] font-extrabold uppercase tracking-[.13em] text-[#0b1938]/55">
                 <span className="flex items-center gap-2"><ShieldCheck className="size-4 text-[#b28b4f]" /> Atendimento humanizado</span>
                 <span className="flex items-center gap-2"><MapPin className="size-4 text-[#b28b4f]" /> Cidade Ocian • Praia Grande</span>
               </div>
@@ -126,7 +126,7 @@ export function SteinertLanding({ clinic }: { clinic: ClinicConfig }) {
                   <p className="st-eyebrow"><span /> Cuidado completo</p>
                   <h2 className="st-section-title mt-5 max-w-3xl">Tratamentos para voltar a sorrir <em>sem insegurança.</em></h2>
                 </div>
-                <p className="max-w-lg leading-7 text-[#58706d] lg:justify-self-end">Cada tratamento começa com uma avaliação cuidadosa. Você entende as possibilidades e participa das decisões em todas as etapas.</p>
+                <p className="max-w-lg leading-7 text-[#5c6b87] lg:justify-self-end">Cada tratamento começa com uma avaliação cuidadosa. Você entende as possibilidades e participa das decisões em todas as etapas.</p>
               </div>
             </Reveal>
             <div className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
@@ -143,7 +143,7 @@ export function SteinertLanding({ clinic }: { clinic: ClinicConfig }) {
               ))}
             </div>
             <div className="mt-8 flex flex-wrap items-center justify-center gap-2">
-              <span className="mr-2 text-xs font-bold uppercase tracking-[.12em] text-[#183f3b]/45">Também cuidamos de</span>
+              <span className="mr-2 text-xs font-bold uppercase tracking-[.12em] text-[#0b1938]/45">Também cuidamos de</span>
               {otherServices.map((item) => <span key={item} className="st-service-pill"><Check className="size-3" /> {item}</span>)}
             </div>
           </div>
@@ -185,13 +185,13 @@ export function SteinertLanding({ clinic }: { clinic: ClinicConfig }) {
             <Reveal>
               <p className="st-eyebrow"><span /> À frente da Clínica Steinert</p>
               <h2 className="st-section-title mt-5">Conhecimento técnico com um cuidado <em>genuinamente humano.</em></h2>
-              <p className="mt-7 text-lg leading-8 text-[#4f6965]">{clinic.about.description}</p>
-              <p className="mt-4 leading-7 text-[#6b7f7c]">{clinic.about.secondaryText}</p>
+              <p className="mt-7 text-lg leading-8 text-[#425577]">{clinic.about.description}</p>
+              <p className="mt-4 leading-7 text-[#68758d]">{clinic.about.secondaryText}</p>
               <div className="mt-8 border-l-2 border-[#c79c58] pl-6">
-                <p className="font-serif text-xl italic leading-8 text-[#183f3b]">“Cada pessoa é única e merece atenção especializada em todas as etapas do tratamento.”</p>
+                <p className="font-serif text-xl italic leading-8 text-[#0b1938]">“Cada pessoa é única e merece atenção especializada em todas as etapas do tratamento.”</p>
               </div>
               <div className="mt-8 grid gap-3 text-sm sm:grid-cols-2">
-                {["Graduação — UNISANTA, 2016", "Residência em Saúde da Família", "Formação em Implantodontia", "Laminados Cerâmicos"].map((item) => <span key={item} className="flex items-center gap-3 font-bold text-[#183f3b]"><Check className="size-4 text-[#b28b4f]" /> {item}</span>)}
+                {["Graduação — UNISANTA, 2016", "Residência em Saúde da Família", "Formação em Implantodontia", "Laminados Cerâmicos"].map((item) => <span key={item} className="flex items-center gap-3 font-bold text-[#0b1938]"><Check className="size-4 text-[#b28b4f]" /> {item}</span>)}
               </div>
             </Reveal>
           </div>
@@ -203,7 +203,7 @@ export function SteinertLanding({ clinic }: { clinic: ClinicConfig }) {
               <div className="mx-auto max-w-3xl text-center">
                 <p className="st-eyebrow justify-center"><span /> Histórias reais</p>
                 <h2 className="st-section-title mt-5">O cuidado que fica na <em>memória de quem viveu.</em></h2>
-                <div className="mt-6 flex items-center justify-center gap-3 text-sm font-bold text-[#183f3b]"><span className="flex text-[#c79c58]">★★★★★</span> Excelente, com base em 60+ avaliações</div>
+                <div className="mt-6 flex items-center justify-center gap-3 text-sm font-bold text-[#0b1938]"><span className="flex text-[#c79c58]">★★★★★</span> Excelente, com base em 60+ avaliações</div>
               </div>
             </Reveal>
             <div className="mt-12 grid gap-5 lg:grid-cols-3">
