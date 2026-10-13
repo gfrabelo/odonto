@@ -4,6 +4,7 @@ import { YohanaLanding } from "@/components/yohana-landing";
 import { GilvanLanding } from "@/components/gilvan-landing";
 import { CareWayLanding } from "@/components/careway-landing";
 import { SteinertLanding } from "@/components/steinert-landing";
+import { SamaraLanding } from "@/components/samara-landing";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
@@ -23,8 +24,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const isCareWay = clinic.slug === "care-way-odontologia";
   const isDentsPremium = clinic.slug === "dents-premium";
   const isSteinert = clinic.slug === "clinica-steinert";
+  const isSamara = clinic.slug === "dra-samara-oliveira";
   
-  const title = isSteinert
+  const title = isSamara
+    ? "Dra. Samara Oliveira | Dentista e Harmonização Orofacial em Moema"
+    : isSteinert
     ? "Clínica Steinert | Implantes e Facetas em Praia Grande"
     : isDentsPremium
     ? "Dents Premium Implantes | Dentista em Praia Grande"
@@ -36,7 +40,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     ? `${clinic.clinicName} | Odontologia Humanizada em Santos`
     : `Dentista em ${clinic.city} | ${clinic.clinicName}`;
 
-  const description = isSteinert
+  const description = isSamara
+    ? "Odontologia e harmonização orofacial em Moema, São Paulo. Preenchimento labial, rinomodelação, bioestimulador e clareamento. Nota 5,0 em 81 avaliações no Google."
+    : isSteinert
     ? "Implantes, facetas, alinhadores e reabilitação oral com atendimento humanizado em Praia Grande. Mais de 2 mil sorrisos transformados."
     : isDentsPremium
     ? "Implantes dentários, próteses dentárias, estética e harmonização facial no Boqueirão, Praia Grande. Dents Premium: nota 4,8 em 229 avaliações."
@@ -62,6 +68,7 @@ export default async function ClinicPage({ params }: PageProps) {
   if (clinic.slug === "dr-gilvan-salvadori") return <GilvanLanding clinic={clinic} />;
   if (clinic.slug === "dra-yohana-vitoria") return <YohanaLanding clinic={clinic} />;
   if (clinic.slug === "care-way-odontologia") return <CareWayLanding clinic={clinic} />;
+  if (clinic.slug === "dra-samara-oliveira") return <SamaraLanding clinic={clinic} />;
   if (clinic.slug === "clinica-steinert") return <SteinertLanding clinic={clinic} />;
   return <ClinicLanding clinic={clinic} />;
 }

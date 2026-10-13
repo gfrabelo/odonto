@@ -1,15 +1,23 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Manrope } from "next/font/google";
+import { Cormorant_Garamond, Manrope, Tenor_Sans } from "next/font/google";
 import "./globals.css";
 import "./yohana.css";
 import "./gilvan.css";
 import "./careway.css";
 import "./steinert.css";
+import "./samara.css";
 
 const manrope = Manrope({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-manrope",
+});
+
+const tenor = Tenor_Sans({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-tenor",
+  weight: "400",
 });
 
 const cormorant = Cormorant_Garamond({
@@ -28,7 +36,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="pt-BR" className="scroll-smooth">
-      <body className={`${manrope.variable} ${cormorant.variable}`}>{children}</body>
+      <body className={`${manrope.variable} ${cormorant.variable} ${tenor.variable}`}>{children}</body>
     </html>
   );
 }

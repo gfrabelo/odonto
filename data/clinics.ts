@@ -113,6 +113,61 @@ const baseServices: Service[] = [
 ];
 
 export const clinics: Record<string, ClinicConfig> = {
+  "dra-samara-oliveira": {
+    slug: "dra-samara-oliveira",
+    clinicName: "Dra. Samara Oliveira",
+    shortName: "Samara Oliveira",
+    logo: "/samara/logo-selo.png",
+    city: "São Paulo",
+    state: "SP",
+    address: "Alameda dos Jurupis, 455 — Sala 92, Moema, São Paulo — SP, 04088-001",
+    phone: "11964799591",
+    phoneDisplay: "(11) 96479-9591",
+    whatsapp: "5511964799591",
+    whatsappDisplay: "(11) 96479-9591",
+    instagram: "@drasamaraoliveira_",
+    cro: "CROSP 171.447",
+    hours: ["Segunda a sexta • 9h às 19h", "Sábado • 8h30 às 15h", "Domingo • Fechado"],
+    hero: {
+      eyebrow: "Odontologia & Harmonização Orofacial • Moema",
+      title: "Sua beleza planejada",
+      highlight: "em detalhes.",
+      description:
+        "Do sorriso ao perfil, cada tratamento começa com escuta e planejamento individual — para um resultado que valoriza você, sem exageros.",
+      socialProof: "5,0 no Google • 81 avaliações",
+    },
+    about: {
+      eyebrow: "Quem cuida de você",
+      title: "Técnica de quem ensina. Cuidado de quem acolhe.",
+      description:
+        "A Dra. Samara Oliveira é cirurgiã-dentista com especialização em Harmonização Orofacial. No consultório em Moema, une odontologia e estética facial em um só planejamento, olhando para o rosto como um todo.",
+      secondaryText:
+        "Além de atender, ministra cursos de HOF para outros profissionais. E para cada paciente, a mesma regra: explicar com calma, respeitar a anatomia e buscar naturalidade.",
+    },
+    services: [
+      { name: "Preenchimento labial", description: "Contorno, hidratação e volume na medida certa, respeitando o formato natural da sua boca.", image: "/samara/instagram/post-018.jpg" },
+      { name: "Rinomodelação", description: "Ajustes sutis no perfil do nariz, sem cirurgia, para mais harmonia entre os traços.", image: "/samara/instagram/post-004.jpg" },
+      { name: "Bioestimulador de colágeno", description: "Firmeza e sustentação para a pele, com resultado progressivo e natural.", image: "/samara/instagram/post-011.jpg" },
+      { name: "Bigode chinês e perfiloplastia", description: "Suavização de sulcos e equilíbrio do perfil facial com planejamento individual.", image: "/samara/instagram/post-013.jpg" },
+      { name: "Clareamento • Protocolo Diamond", description: "Um sorriso mais branco e iluminado, com resultado natural e acompanhamento de perto.", image: "/samara/sala-dentista.jpg" },
+      { name: "Clínica geral e alinhadores", description: "Prevenção, restaurações e alinhadores invisíveis para cuidar da saúde e do alinhamento.", image: "/samara/sala-dentista.jpg" },
+    ],
+    doctors: [{ name: "Dra. Samara Oliveira", specialty: "Cirurgiã-dentista • Harmonização Orofacial", cro: "CROSP 171.447", image: "/samara/dra-samara-retrato.jpg" }],
+    stats: [
+      { value: "5,0", label: "nota no Google" },
+      { value: "81", label: "avaliações de pacientes" },
+      { value: "15 mil", label: "seguidores no Instagram" },
+    ],
+    testimonials: [
+      { name: "Nathalia L.", text: "Fiz um clareamento com a Dra. Samara e amei o resultado! Ficou super natural, exatamente como eu queria. Além disso, ela foi super cuidadosa e me explicou tudo direitinho.", rating: 5, detail: "Clareamento" },
+      { name: "Lucas C.", text: "A sala de espera é muito agradável, proporcionando um ambiente acolhedor desde a chegada. Fui recebido com um delicioso chocolate quente e um biscoito de Nutella, um cuidado que faz toda a diferença.", rating: 5, detail: "Experiência no consultório" },
+      { name: "Wanderlei M.", text: "Adorei a consulta tranquila e sem dor. A dentista explicou com calma cada passo do tratamento, gentil e atenciosa. A clínica é muito limpa e organizada.", rating: 5, detail: "Tratamento odontológico" },
+      { name: "Luana P.", text: "A clínica é linda, aconchegante e cheia de detalhes que fazem a diferença. O atendimento foi impecável do começo ao fim. Ainda tem um cantinho com café que deixa tudo mais especial.", rating: 5, detail: "Primeira consulta" },
+      { name: "Gilvan A.", text: "Profissional super competente, atenciosa, educada, que nos deixa muito confortável na realização do tratamento, por nos passar muita confiança e segurança em todo o processo.", rating: 5, detail: "Tratamento completo" },
+      { name: "Isabella M.", text: "Uma excelente profissional, Dra. Samara super atenciosa e cuidadosa. Cuidou do meu tratamento do início ao fim.", rating: 5, detail: "Paciente desde o início" },
+    ],
+    clinicImages: ["/samara/recepcao.jpg", "/samara/sala-hof.jpg", "/samara/sala-dentista.jpg", "/samara/cantinho-cafe.jpg", "/samara/vista-por-do-sol.jpg"],
+  },
   "clinica-steinert": {
     slug: "clinica-steinert",
     clinicName: "Clínica Steinert",
